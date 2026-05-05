@@ -14,17 +14,17 @@
 	}
 }
 
-piped.iiothub.net {
+yt.iiothub.net {
 	reverse_proxy piped-frontend:80
 	import global
 }
 
-pipedapi.iiothub.net {
+ytapi.iiothub.net {
 	reverse_proxy nginx:80
 	import global
 }
 
-pipedproxy.iiothub.net {
+ytproxy.iiothub.net {
 	@ytproxy path /videoplayback* /api/v4/* /api/manifest/*
 	import global
 

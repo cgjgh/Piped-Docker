@@ -5,7 +5,7 @@ services:
         depends_on:
             - piped
         environment:
-            BACKEND_HOSTNAME: pipedapi.iiothub.net
+            BACKEND_HOSTNAME: ytapi.iiothub.net
             HTTP_MODE: https
         container_name: piped-frontend
     piped-proxy:
